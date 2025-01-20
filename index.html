@@ -632,4 +632,61 @@
                 </div>
             </div>
         </section>
-        
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                text-align: center;
+            }
+    
+            #bibliografia-texto {
+                display: none;
+                margin-top: 20px;
+                text-align: left;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+            }
+    
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                color: #fff;
+                background-color: #007bff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+    
+            button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="boton-bibliografia">Bibliografía</button>
+    
+        <div id="bibliografia-texto">
+            <p><strong>Bibliografías:</strong></p>
+            <ul>
+                <li>Valenzuela, C. G. (2023, enero 9). Esta es la historia de los teléfonos móviles: desde su origen hasta la actualidad. <em>Computer Hoy</em>. <a href="https://computerhoy.20minutos.es/moviles/historia-telefonos-moviles-origen-actualidad-1181484" target="_blank">https://computerhoy.20minutos.es/moviles/historia-telefonos-moviles-origen-actualidad-1181484</a></li>
+                <li>Claus, E. (2019, febrero 28). Historia del teléfono. <em>La Vanguardia</em>. <a href="https://www.lavanguardia.com/vida/junior-report/20190228/46730308072/historia-telefono.html" target="_blank">https://www.lavanguardia.com/vida/junior-report/20190228/46730308072/historia-telefono.html</a></li>
+                <li>Argus World Plus [@ArgusWorldPlus]. (s/f). HUAWEI mate 40 pro trailer AI features introduction official video HD | HUAWEI mate 40 pro 5G. <em>YouTube</em>. Recuperado el 20 de enero de 2025, de <a href="https://www.youtube.com/watch?v=vs-tTkUq_gg" target="_blank">https://www.youtube.com/watch?v=vs-tTkUq_gg</a></li>
+            </ul>
+        </div>
+    
+        <script>
+            const botonBibliografia = document.getElementById('boton-bibliografia');
+            const bibliografiaTexto = document.getElementById('bibliografia-texto');
+    
+            botonBibliografia.addEventListener('click', () => {
+                if (bibliografiaTexto.style.display === 'none' || bibliografiaTexto.style.display === '') {
+                    bibliografiaTexto.style.display = 'block';
+                } else {
+                    bibliografiaTexto.style.display = 'none';
+                }
+            });
+        </script>
